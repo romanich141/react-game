@@ -1,7 +1,6 @@
 /* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-// eslint-disable-next-line import/no-cycle
 import {
   AnswersList, Burger, Question, ScoreList,
 } from '../index.js';
