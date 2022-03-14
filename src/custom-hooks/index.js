@@ -1,4 +1,4 @@
-import { useModal } from './useModal';
+import useModal from './useModal';
 import useStore from './useStore';
 import useWindowResize from './useWindow';
 

@@ -2,7 +2,7 @@ import {
   actionTypeSuccess,
   actionTypeReset,
 } from './actions';
-import { defaultStore } from './store';
+import defaultStore from './store';
 
 const reducer = (state, action) => {
   switch (action.type) {
