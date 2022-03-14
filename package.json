@@ -39,11 +39,8 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.5",
-    "prettier": "^2.5.1"
+    "lint-staged": "^12.3.5"
   }
 }
