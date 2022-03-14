@@ -1,10 +1,10 @@
-/* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  AnswersList, Burger, Question, ScoreList,
-} from '../index.js';
 import { useStore, useModal, useWindowResize } from '../../custom-hooks';
+import AnswersList from '../AnswersList';
+import Burger from '../Burger';
+import Question from '../Question';
+import ScoreList from '../ScoreList';
 
 function Game() {
   const { store } = useStore();
