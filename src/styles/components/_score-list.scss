@@ -1,0 +1,109 @@
+.score-list {
+  --max-width: 376px;
+
+  max-width: var(--max-width);
+  width: 100%;
+  @include flex(column, center, center);
+  z-index: 4;
+  &.score--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .score__close-btn {
+    @include sizes(20px, 20px);
+    position: absolute;
+    border: none;
+    background: none;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    svg {
+      @include sizes(20px, 20px);
+    }
+  }
+  
+  .rectangle {
+    @include sizes(240px, 30px);
+  }
+  .score {
+    position: relative;
+    margin-bottom: 8px;
+    
+    @include flex(row, center, center);
+  
+    &::before {
+      content: "";
+      position: absolute;
+      @include sizes(200%, 1px);
+      top: calc(50% - 0.5px);
+      background-color: $black-40;
+      z-index: -1;
+    }
+  
+    &__label {
+      position: absolute;
+      z-index: 1;
+    }
+    &__rectangle {
+      @include sizes(240px, 32px);
+      position: relative;
+      fill: $white-100;
+      stroke: $black-40;
+    }
+  
+    &--active {
+      &::before {
+        background-color: $orange-100;
+      }
+  
+      .score__label {
+        color: $orange-100;
+      }
+  
+      .score__rectangle {
+        stroke: $orange-100;
+      }
+    }
+  
+    &--complete {
+      &::before {
+        background-color: $black-5;
+      }
+      .score__label {
+        color: $black-5;
+      }
+      .score__rectangle {
+        stroke: $black-5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .score-list {
+    --max-width: 276px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .score-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    left: -100%;
+    background: $black-5;
+   
+   
+    .score__rectangle {
+      @include sizes(280px, 40px);
+    }
+    
+    &--show {
+      left: 0%;
+      max-width: 100%;
+      z-index: 7;
+    }
+  }
+}

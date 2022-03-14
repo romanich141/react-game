@@ -1,0 +1,18 @@
+.welcome {
+  @include flex(row, center, center);
+  @include sizes(100vw, 100vh);
+  padding: 20px;
+  background-image: url("../../assets/images/triangle-bg.svg");
+
+  &__title {
+    font-size: 20px;
+    color: $black-40;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    @include flex(column, center, center);
+    text-align: center;
+  }
+}

@@ -1,0 +1,167 @@
+.question {
+  &__wrapper {
+    --title-fz: 32px;    
+    --padding: 60px;
+
+    @include flex(column, center, center);
+    background-color: $black-5;
+    padding: var(--padding);
+    z-index: 6;
+    max-width: 100%;
+    flex-grow: 1;
+
+    .answers {
+      &__wrapper {
+        @include flex(row, center, stretch, wrap);
+        margin-top: auto;
+        max-width: 800px;
+        overflow: hidden;        
+        
+        .answer {
+          @include flex(row, start, center);
+          padding: 0 5px;
+          width: 50%;
+          position: relative;
+          margin-top: 32px;
+          cursor: pointer;
+        
+          .answer__rectangle {
+            position: relative;
+            fill: $white-100;
+            stroke: $black-40;
+        
+            
+            @include sizes(390px, 72px);
+          }
+        
+          &::before {
+            content: "";
+            position: absolute;
+            @include sizes(100%, 1px);
+            top: calc(50% - 0.5px);
+            left: 0%;
+            background-color: $black-40;
+          }
+        
+          // HOVER
+          &:hover {
+            .answer__rectangle {
+              stroke: $orange-100;
+            }
+        
+            &::before,
+            &::after {
+              background-color: $orange-100;
+            }
+          }
+        
+           // CHECKED
+           .input--checkbox {
+              & + .answer__label {
+                position: absolute;
+                color: $black-100;
+                z-index: 2;
+                padding-left: 40px;
+              }
+              
+              &:checked ~ .answer__rectangle {
+                fill: $orange-5;
+              }
+
+          }
+
+          .numeric__text {
+            color: $orange-100;
+            padding-right: 5px;
+          }
+          // SUCESS
+          &.answer--success {
+            .input--checkbox ~ .answer__rectangle {
+              stroke: $green-100;
+              fill: $green-5;
+            }
+        
+            &::before,
+            &::after {
+              background-color: $green-100;
+            }
+          }
+        
+          // ERROR
+          &.answer--error {
+            .input--checkbox ~ .answer__rectangle {
+              stroke: $red-100;
+              fill: $red-5;
+            }
+        
+            &::before,
+            &::after {
+              background-color: $red-100;
+            }
+          }
+        
+          // FOCUS
+          &:focus-within {
+            .rectangle {
+              stroke: $orange-100;
+            }
+        
+            &::before,
+            &::after {
+              background-color: $orange-100;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--title-fz);
+  }
+}
+
+@media screen and (max-width: 992px){
+  .question {
+    &__wrapper {
+      --title-fz: 26px;
+      --padding: 60px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .question {
+    &__wrapper {
+      --padding: 30px 15px;
+
+      .answers__wrapper {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 578px){
+  .question {
+    &__wrapper {
+      --title-fz: 18px;
+      --padding: 20px;
+    
+      .answers__wrapper {
+        .answer {
+          width: 70%;
+          margin-top: 8px;
+          .rectangle {
+            height: 60px;
+          }
+        }
+      }
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}

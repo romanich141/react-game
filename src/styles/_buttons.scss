@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s;
+  text-align: center;
+  padding: 15px 20px;
+  display: inline-block;
+  width: 290px;
+
+  &--orange {
+    background: $orange-100;
+    color: $white-100;
+
+    &:hover {
+      background: $orange-80;
+    }
+
+    &:active {
+      background: $orange-120;
+    }
+  }
+}
