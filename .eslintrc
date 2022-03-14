@@ -9,6 +9,9 @@
     ],
     "rules": {
       "semi": 0,
+      "no-plusplus": "off",
+      "no-case-declarations": "off",
+      "no-param-reassign": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "jsx-a11y/label-has-associated-control": [ "error", {
         "required": {

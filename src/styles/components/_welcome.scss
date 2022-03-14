@@ -3,6 +3,7 @@
   @include sizes(100vw, 100vh);
   padding: 20px;
   background-image: url("../../assets/images/triangle-bg.svg");
+  background-position: center;
 
   &__title {
     font-size: 20px;

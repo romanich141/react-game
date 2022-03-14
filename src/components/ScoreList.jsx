@@ -4,7 +4,7 @@ import Score from './Score';
 import { addCurrrency } from '../helpers';
 import { useStore } from '../custom-hooks';
 
-function ScoreList({ isReverseList = true, mobileMenu = false }) {
+function ScoreList({ isReverseList, mobileMenu = false }) {
   const { store } = useStore();
 
   return (
@@ -24,8 +24,12 @@ function ScoreList({ isReverseList = true, mobileMenu = false }) {
   );
 }
 
+ScoreList.defaultProps = {
+  isReverseList: false,
+}
+
 ScoreList.propTypes = {
-  isReverseList: PropTypes.bool.isRequired,
+  isReverseList: PropTypes.bool,
   mobileMenu: PropTypes.bool.isRequired,
 };
 
