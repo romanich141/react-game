@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useReducer } from "react";
+import Context from "./context/Context";
+import { defaultStore } from "./store/store";
+import { reducer } from "./store/reducer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Game, Welcome, FinishGame, NotFound } from "./components";
+import "./styles/main.scss";
 
-function App() {
+const App = () => {
+  const [store, dispatch] = useReducer(reducer, defaultStore);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider value={{ store, dispatch }}>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Welcome />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/finish" element={<FinishGame />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </Context.Provider>
   );
-}
+};
 
 export default App;
