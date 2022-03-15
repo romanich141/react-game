@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-game/static/css/main.ea1b3e32.css",
-    "main.js": "/react-game/static/js/main.e5bba100.js",
+    "main.js": "/react-game/static/js/main.8298d354.js",
     "static/media/hand.svg": "/react-game/static/media/hand.ae778be2545d339186d7f27827d5ba72.svg",
     "index.html": "/react-game/index.html",
     "static/media/close.svg": "/react-game/static/media/close.265b6868b7ecaa615720233903c5d0bd.svg",
@@ -10,10 +10,10 @@
     "static/media/rectangle.svg": "/react-game/static/media/rectangle.93af0c5d5f82c4f281ed1be0a7938364.svg",
     "static/media/triangle-bg.svg": "/react-game/static/media/triangle-bg.5b01b2ff92a1a7c7332d.svg",
     "main.ea1b3e32.css.map": "/react-game/static/css/main.ea1b3e32.css.map",
-    "main.e5bba100.js.map": "/react-game/static/js/main.e5bba100.js.map"
+    "main.8298d354.js.map": "/react-game/static/js/main.8298d354.js.map"
   },
   "entrypoints": [
     "static/css/main.ea1b3e32.css",
-    "static/js/main.e5bba100.js"
+    "static/js/main.8298d354.js"
   ]
 }
