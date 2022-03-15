@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-game/static/css/main.640d3f45.css",
+    "main.css": "/react-game/static/css/main.2fab4573.css",
     "main.js": "/react-game/static/js/main.d99a3b02.js",
     "static/media/hand.svg": "/react-game/static/media/hand.ae778be2545d339186d7f27827d5ba72.svg",
     "index.html": "/react-game/index.html",
@@ -9,11 +9,11 @@
     "static/media/answer.svg": "/react-game/static/media/answer.f2dae2140bbb64292c0d0a5525f57506.svg",
     "static/media/rectangle.svg": "/react-game/static/media/rectangle.93af0c5d5f82c4f281ed1be0a7938364.svg",
     "static/media/triangle-bg.svg": "/react-game/static/media/triangle-bg.5b01b2ff92a1a7c7332d.svg",
-    "main.640d3f45.css.map": "/react-game/static/css/main.640d3f45.css.map",
+    "main.2fab4573.css.map": "/react-game/static/css/main.2fab4573.css.map",
     "main.d99a3b02.js.map": "/react-game/static/js/main.d99a3b02.js.map"
   },
   "entrypoints": [
-    "static/css/main.640d3f45.css",
+    "static/css/main.2fab4573.css",
     "static/js/main.d99a3b02.js"
   ]
 }
