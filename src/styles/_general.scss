@@ -77,3 +77,19 @@ body,
     font-size: 32px;
   }
 }
+
+@media (pointer: fine) {
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+  }
+}
+
+@media (pointer: coarse) {
+  .question__open-btn {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+  }
+}
