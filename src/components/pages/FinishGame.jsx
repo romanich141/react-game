@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { actionTypeReset } from '../../store/actions';
 import { ReactComponent as Hand } from '../../assets/images/hand.svg';
-import { addCurrrency } from '../../helpers';
+import { addCurrrency, formatCurrency } from '../../helpers';
 import useStore from '../../custom-hooks/useStore';
 
 function FinishGame() {
@@ -13,7 +13,7 @@ function FinishGame() {
       <Hand className="logo" />
       <div>
         <div className="finish__title">Total score:</div>
-        <div className="title">{`${addCurrrency(store.score)} earned`}</div>
+        <div className="title">{`${addCurrrency(formatCurrency(store.score))} earned`}</div>
         <Link
           className="btn btn--orange"
           to="/"
