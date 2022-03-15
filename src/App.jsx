@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Context from './context/Context';
 import defaultStore from './store/store';
 import reducer from './store/reducer';
@@ -15,14 +15,14 @@ function App() {
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <Context.Provider value={{ store, dispatch }}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Welcome />} />
           <Route path="/game" element={<Game />} />
           <Route path="/finish" element={<FinishGame />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Context.Provider>
   );
 }
