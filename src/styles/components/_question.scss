@@ -67,7 +67,10 @@
               &:checked ~ .answer__rectangle {
                 fill: $orange-5;
               }
-
+              
+              &:active ~ .answer__rectangle {
+                outline: none;
+              }
           }
 
           .numeric__text {
