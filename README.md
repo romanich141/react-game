@@ -6,3 +6,5 @@
 1. commit changes
 2. push changes
 3. npm run deploy
+
+# link game https://romanich141.github.io/react-game
