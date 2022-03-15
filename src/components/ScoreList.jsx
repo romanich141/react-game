@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Score from './Score';
-import { addCurrrency } from '../helpers';
+import { addCurrrency, formatCurrency } from '../helpers';
 import { useStore } from '../custom-hooks';
 
 function ScoreList({ isReverseList, mobileMenu = false }) {
@@ -16,7 +16,7 @@ function ScoreList({ isReverseList, mobileMenu = false }) {
       {store.data.map((step, index) => (
         <Score
           key={step.id}
-          label={addCurrrency(step.score)}
+          label={addCurrrency(formatCurrency(step.score))}
           scoreIndex={index}
         />
       ))}
@@ -25,7 +25,7 @@ function ScoreList({ isReverseList, mobileMenu = false }) {
 }
 
 ScoreList.defaultProps = {
-  isReverseList: false,
+  isReverseList: true,
 }
 
 ScoreList.propTypes = {

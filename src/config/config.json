@@ -1,30 +1,86 @@
 [
   {
-    "question": "1. Земля оливкової олії?",
-    "answers": ["Ізраїль", "Індія", "Франція", "Нідерланди"],
-    "success": ["Ізраїль"],
-    "score": "100",
+    "question": "1. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "500",
     "id": 1
   },
   {
-    "question": "2. У якій країні прийнято подавати на стіл живу рибу, яка плескає хвостом?",
-    "answers": ["Лаос", "Фінляндія", "Німеччина", "Італія"],
-    "success": ["Лаос"],
-    "score": "200",
+    "question": "2. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "1000",
     "id": 2
   },
   {
-    "question": "3. У якій країні прийнято подавати на стіл живу рибу, яка плескає хвостом?",
-    "answers": ["Лаос", "Фінляндія", "Німеччина", "Італія"],
-    "success": ["Лаос"],
-    "score": "300",
+    "question": "3. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "2000",
     "id": 3
   },
   {
-    "question": "4. У якій країні прийнято подавати на стіл живу рибу, яка плескає хвостом?",
-    "answers": ["Лаос", "Фінляндія", "Німеччина", "Італія"],
-    "success": ["Лаос"],
-    "score": "400",
+    "question": "4. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "4000",
     "id": 4
+  },
+  {
+    "question": "5. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "8000",
+    "id": 5
+  },
+  {
+    "question": "6. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "16000",
+    "id": 6
+  },
+  {
+    "question": "7. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "32000",
+    "id": 7
+  },
+  {
+    "question": "8. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "64000",
+    "id": 8
+  },
+  {
+    "question": "9. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "125000",
+    "id": 9
+  },
+  {
+    "question": "10. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "250000",
+    "id": 10
+  },
+  {
+    "question": "11. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "500000",
+    "id": 11
+  },
+  {
+    "question": "12. How old your elder brother was 10 years before you was born, mate?",
+    "answers": ["10 years", "14 years", "9 years", "12 years"],
+    "success": ["9 years"],
+    "score": "1000000",
+    "id": 12
   }
 ]

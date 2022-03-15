@@ -6,6 +6,8 @@ export const delay = (ms) => new Promise((resolve) => {
   setTimeout(resolve, ms)
 });
 
+export const formatCurrency = (value) => Number(value).toLocaleString('en-US');
+
 export const addCurrrency = (value, currency = '$') => `${currency} ${value}`;
 
 export const numeric = {
