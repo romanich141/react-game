@@ -12,21 +12,26 @@ function AnswersList() {
   const navigate = useNavigate();
 
   const allAnswersIsSelected = selectValues.length === currentStepData.success.length;
+  const toggleShowResult = () => setShowResult(!showResult);
+  const clearData = () => {
+    setSelectValues([]);
+    toggleShowResult();
+  };
 
   useEffect(() => {
+    const nextStep = () => {
+      if (arrayEquals(selectValues, currentStepData.success)) {
+        return dispatch({ type: actionTypeSuccess });
+      }
+      return navigate('/finish');
+    }
     const checkAnswers = async () => {
       if (allAnswersIsSelected) {
-        await delay(500)
-          .then(() => setShowResult(true))
-          .then(() => delay(500))
-          .then(() => {
-            if (arrayEquals(selectValues, currentStepData.success)) {
-              return dispatch({ type: actionTypeSuccess });
-            }
-            return navigate('/finish');
-          })
-          .then(() => setShowResult(false))
-          .then(() => setSelectValues([]));
+        await delay(500);
+        toggleShowResult();
+        await delay(500);
+        nextStep();
+        clearData();
       }
     };
 
